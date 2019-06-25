@@ -1,0 +1,149 @@
+body{
+    margin: 0 auto;
+    color: #555559;
+    max-width: 1455px;
+    font-family: sans-serif;
+}
+.header-grid{
+    background-image:  linear-gradient(to bottom, rgba(0, 0, 0, 0.8), transparent 50%, transparent 100%), url('../images/hotdogs.png') ;
+    background-repeat: repeat-x;   
+    width: 100%;
+    height: 481px;    
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+}
+.instagram {
+    position: absolute;
+    right : 10px;
+    top: 15px;
+}
+.instagram>img{
+    vertical-align: middle;
+}  
+.hashtag {
+    color: #ffffff;
+    font-family: "Helvetica", sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    margin-left: 6px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.menu-main {
+    list-style: none;
+    margin: 0 0 5px;
+    padding: 25px 0 25px;
+    text-align: center;
+    background: white;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.menu-main li {
+    display: inline-block;
+    margin-right: 2vw;
+}
+.menu-main a{
+    text-decoration: none;
+    color: inherit;
+}
+nav{
+    box-shadow: 0 6px 4px -4px rgba(0, 0, 0, .2);
+}
+.main-wrapper{
+    position: relative;
+    background-color: #fbfafa;
+    padding: 3%;
+}
+.main-wrapper * {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.main-wrapper h1{
+    text-align: center;
+    font-size: 4em;
+    width: 70%;
+    font-weight: 100;
+}
+.main-wrapper button{
+    background-color: #286782;
+    color: white;
+    text-align: center;
+    border: solid 1px transparent;
+    border-radius: 4px;
+    padding: 1em 1em;
+}
+.hotdogs-grid{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.hotdogs-grid img{
+    width: 100%;
+    height: auto;
+}
+.hotdogs-grid h2::before{
+    content: "\2014";
+    margin-right: 0.5em;
+}
+.hotdog-description-container{
+    position: relative;
+    margin-left: 20%;
+    margin-right: 20%;
+    display: table;
+    width: auto;
+    height: 100%;
+}
+.hotdog-description{
+    vertical-align: middle;
+    display: table-cell;
+}
+.hotdog-description h2{
+    vertical-align: middle;
+    margin: auto;
+}
+.hotdog-description p{
+    margin-left: 8%;
+}
+footer {
+    background-color: #efefef;
+    margin: 0;
+    padding: 0.5em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+footer p a{
+    text-decoration: none;
+    color: #555559;
+}
+@media screen and (max-width: 768px) {
+    .hotdogs-grid{
+        grid-template-columns: 1fr;
+    }
+    .main-wrapper{
+        padding:0;
+    }
+    footer{
+        display: block;
+    }
+    .main-wrapper button{
+        margin-bottom: 1em;
+    }
+    .hotdog-description-container{
+        margin: 0;
+    }
+    .main-wrapper h1{
+        text-align: left;
+        font-size: 2em;
+    }
+    .hotdogs-grid h2{
+        margin-top: 1em;
+    }
+    .header-grid{
+        height: 240px;
+    }
+
+}
