@@ -1,0 +1,18 @@
+footer {
+    background-color: #efefef;
+    margin: 0;
+    padding: 0.5em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+footer p a{
+    text-decoration: none;
+    color: #555559;
+}
+@media screen and (max-width: 768px) {
+    footer{
+        display: block;
+    }
+
+}

@@ -1,0 +1,77 @@
+.main-wrapper{
+    position: relative;
+    background-color: #fbfafa;
+    padding: 3%;
+}
+.main-wrapper * {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.main-wrapper h1{
+    text-align: center;
+    font-size: 4em;
+    width: 70%;
+    font-weight: 100;
+}
+.main-wrapper button{
+    background-color: #286782;
+    color: white;
+    text-align: center;
+    border: solid 1px transparent;
+    border-radius: 4px;
+    padding: 1em 1em;
+}
+.hotdogs-grid{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.hotdogs-grid img{
+    width: 100%;
+    height: auto;
+}
+.hotdogs-grid h2::before{
+    content: "\2014";
+    margin-right: 0.5em;
+}
+.hotdog-description-container{
+    position: relative;
+    margin-left: 20%;
+    margin-right: 20%;
+    display: table;
+    width: auto;
+    height: 100%;
+}
+.hotdog-description{
+    vertical-align: middle;
+    display: table-cell;
+}
+.hotdog-description h2{
+    vertical-align: middle;
+    margin: auto;
+}
+.hotdog-description p{
+    margin-left: 8%;
+}
+@media screen and (max-width: 768px) {
+    .hotdogs-grid{
+        grid-template-columns: 1fr;
+    }
+    .main-wrapper{
+        padding:0;
+    }
+    .main-wrapper button{
+        margin-bottom: 1em;
+    }
+    .hotdog-description-container{
+        margin: 0;
+    }
+    .main-wrapper h1{
+        text-align: left;
+        font-size: 2em;
+    }
+    .hotdogs-grid h2{
+        margin-top: 1em;
+    }
+}

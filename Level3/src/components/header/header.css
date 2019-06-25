@@ -1,0 +1,54 @@
+.header-grid{
+    background-image:  linear-gradient(to bottom, rgba(0, 0, 0, 0.8), transparent 50%, transparent 100%), url('/images/hotdogs.png') ;
+    background-repeat: repeat-x;   
+    width: 100%;
+    height: 481px;    
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+}
+.instagram {
+    position: absolute;
+    right : 10px;
+    top: 15px;
+}
+.instagram>img{
+    vertical-align: middle;
+}  
+.hashtag {
+    color: #ffffff;
+    font-family: "Helvetica", sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    margin-left: 6px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.menu-main {
+    list-style: none;
+    margin: 0 0 5px;
+    padding: 25px 0 25px;
+    text-align: center;
+    background: white;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.menu-main li {
+    display: inline-block;
+    margin-right: 2vw;
+}
+.menu-main a{
+    text-decoration: none;
+    color: inherit;
+}
+nav{
+    box-shadow: 0 6px 4px -4px rgba(0, 0, 0, .2);
+}
+@media screen and (max-width: 768px) {
+    
+    .header-grid{
+        height: 240px;
+    }
+
+}
